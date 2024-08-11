@@ -20,12 +20,11 @@ cd Desing-Chicks-Challenge
 
 ```bash
 npm install
-
+```
 4. Run the application:
 
 ```bash
 npm start
-
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
