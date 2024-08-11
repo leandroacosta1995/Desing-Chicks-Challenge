@@ -1,0 +1,463 @@
+
+.icon-cart:hover {
+	cursor: pointer;
+}
+
+/* CARD */
+
+.container_global{
+	background-color: #2d2d44e5;
+	padding: 20px;
+}
+
+.container_select{
+    color: white;
+    max-width: 600px;
+    margin: auto;
+	padding: auto;
+	border-radius: 8px;
+
+}
+
+select{
+	background-color: #616b85;
+	color: white;
+	border: none;
+	width: 10%;
+	height: 50px;
+	margin: 15px 0px 0px 0px;
+}
+
+.search{
+	color:white;
+	all: unset;
+	background-color: #616b85;
+	width: 40%;
+	height: 50px;
+	margin: 0px 0px 15px 20px;
+}
+
+.Btn-Buscar{
+	color: white;
+	all: unset;
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	transform: translate(-32px);
+}
+
+
+.container_card{
+	background-color: #2d2d32;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+	padding: auto;
+	border: 2px solid #425a7a;
+	border-radius: 8px;
+	display: grid;
+	grid-template-columns:5,20vh;
+
+}
+
+
+.container-items {
+	display: grid;
+	grid-template-columns: repeat(5, 20vh);
+	gap: 1px;
+}
+
+.item {
+	background-color: #3d455a;
+	margin: 15px;
+	border-radius: 2px;
+	
+
+}
+
+.item:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.conteiner_select{
+	display: flex;
+	justify-content: space-around;
+	padding: 6px 0px 0px 0px;
+	margin: 6px 0px 0px 0px;
+
+}
+
+
+.pruebaCantidad{
+	display: flex;
+	justify-content: space-around;
+}
+
+.item img {
+	margin: 10px 0px 0px 10px;
+	width: 50%;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	transition: all 0.5s;
+}
+
+.item figure {
+	overflow: hidden;
+	margin: auto;
+}
+
+.item:hover img {
+	transform: scale(1.2);
+}
+
+.info-product {
+	display: flex;
+	flex-direction: column;
+	font-size: 8px;
+	margin: 0px 0px 0px 10px;
+	text-align: start;
+	
+}
+
+
+
+.status {
+	color: white;
+	font-weight: bold;
+	font-size: 8px;
+	margin: 15px 15px 0px 0px;
+  }
+
+.buttonStock{
+	font-size: 8px;
+	color: rgb(8, 240, 8);
+	width: 40%;
+	text-align: center;
+	font-size: 8px;
+	padding: 5px;
+	margin: 0px 0px 0px 15px;
+	border-radius: 10px;
+	border: 1px solid rgb(7, 252, 7);
+  }
+
+.inputNumero{
+	background-color: rgb(116, 100, 100);
+	width: 20%;
+	margin: 15px 0px 0px 0px;
+	border-radius: 5px;
+}
+.inputNumero input{
+	display: flex;
+	font-weight: 400;
+	font-size: medium;
+	justify-content: end;
+	width: 20px;
+	height: 20px;
+	border-style: none;
+	
+}
+.precios {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.salePrice{
+	font-size: 12px;
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	border:none;
+}
+
+.originalPrice {
+	font-size: 12px;
+	padding: 20px;
+	margin: 0;
+	font-weight: 400;
+	text-decoration: line-through red;
+    color: #858d85;
+	border:none;
+}
+
+.Description{
+	font-size: 8px;
+	margin: 0;
+}
+
+.buttonCard{
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+
+}
+
+.detalleProducto{
+	font-size: 8px;
+	width: 40%;
+	text-align: center;
+	padding: 2%;
+    margin: 5px;
+    border-radius: 2px;
+    background: #858d85;
+    color: #272727;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.agregarCarrito{
+	font-size: 8px;
+	width: 40%;
+	text-align: center;
+	padding: 2%;
+    margin: 5px;
+    border-radius: 2px;
+    background: #2a448b;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+
+
+.container_pagination{
+	height: 10vh;
+	width: 50%;
+	display: flex;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+  }
+  .container_pagination .pagination {
+
+	height: 60px;
+	background: rgba(50, 31, 223, 0.05);
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2px;
+  }
+  .container_pagination .pagination li {
+	list-style-type: none;
+	display: inline-block;
+  }
+  .container_pagination .pagination li a {
+	padding: 20px 25px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+  }
+  .container_pagination .pagination li a:hover
+  {
+	background: #2a448b;
+  }
+ .active{
+	background: #2a448b;
+  }
+  
+ 
+  @media(max-width: 600px){
+	.container_global{
+		background-color: #2d2d44e5;
+		padding: 20px;
+	
+	}
+
+	.container_select{
+		color: white;
+		max-width: 500px;
+	
+	}
+
+	.container_card{
+		max-width: 500px;
+		display: grid;
+		grid-template-columns:1, 50px;
+	
+	}
+
+	.container-items {
+		display: grid;
+		grid-template-columns: repeat(2, 20vh);
+		gap: 1px;
+	}
+	
+	select{
+		margin: auto;
+		width: 20%;
+	}
+	
+	
+	.search{
+		width: 25%;
+	}
+  }
+
+  @media(min-width: 600px){
+	.container_global{
+		background-color: #2d2d44e5;
+		padding: 20px;
+	
+	}
+
+	.container_select{
+		color: white;
+		max-width: 500px;
+	
+	}
+
+	.container_card{
+		max-width: 550px;
+		display: grid;
+		grid-template-columns:1, 50px;
+	
+	}
+
+	.container-items {
+		display: grid;
+		grid-template-columns: repeat(3, 22vh);
+		gap: 1px;
+	}
+	
+	select{
+		margin: auto;
+		width: 20%;
+	}
+	.seleccCard{
+		margin: 0%;
+	}
+	
+	.search{
+		width: 25%;
+	}
+  }
+  @media (min-width: 768px){
+	.container_global{
+		background-color: #2d2d44e5;
+		padding: 20px;
+	
+	}
+
+	.container_select{
+		color: white;
+		max-width: 800px;
+	
+	}
+
+	.container_card{
+		max-width: 800px;
+		display: grid;
+		grid-template-columns:5, 1fr;
+	
+	}
+
+	.container-items {
+		display: grid;
+		grid-template-columns: repeat(5, 20vh);
+		gap: 1px;
+	}
+	
+	select{
+		margin: auto;
+		width: 20%;
+	}
+	.seleccCard{
+		margin: 0%;
+	}
+	
+	.search{
+		width: 25%;
+	}
+  }
+
+
+  @media(min-width: 992px) {
+
+
+	.container_select{
+		color: white;
+		max-width: 850px;
+	
+	}
+
+	.container_card{
+		max-width: 00px;
+		display: grid;
+		grid-template-columns:1, 50px;
+	
+	}
+
+	.container-items {
+		display: grid;
+		grid-template-columns: repeat(5, 22vh);
+		gap: 1px;
+	}
+	
+	select{
+		margin: auto;
+		width: 20%;
+	}
+	.seleccCard{
+		margin: 0%;
+	}
+	
+	.search{
+		width: 25%;
+	}
+  }
+
+  @media(min-width: 1200px) {
+
+
+	.container_global{
+		background-color: #2d2d44e5;
+		padding: 20px;
+	
+	}
+
+	.container_select{
+		color: white;
+		max-width: 1100px;
+	
+	}
+
+	.container_card{
+		max-width: 1100px;
+		display: grid;
+		grid-template-columns:1, 50px;
+	
+	}
+
+	.container-items {
+		display: grid;
+		grid-template-columns: repeat(5, 23vh);
+		gap: 1px;
+	}
+	
+	select{
+		margin: auto;
+		width: 20%;
+	}
+	.seleccCard{
+		margin: 0%;
+	}
+	
+	.search{
+		width: 25%;
+	}
+  }
+
+  

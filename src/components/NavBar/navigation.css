@@ -1,0 +1,118 @@
+.navbar{
+    background: #2d2d32;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #425a7a;
+}
+
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 2cap;
+    cursor: pointer;
+
+}
+
+.navbar-logo img{
+    width: 450px;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
+}
+
+.nav-items{
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    justify-content: start;
+    margin-right: 2rem;
+}
+
+.nav_items2{
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    width: 80vw;
+    justify-content: end;
+    margin: 2rem;
+}
+ 
+    .nav-links{
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+  }
+ 
+    .buttonNav {
+      width: 100px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 5px;
+      background: #19d800;
+      color: #fff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  .button:hover{
+      background-color: #fff;
+      color: #19d800;
+  }
+
+
+.a{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 350;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav_toggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav_items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #425a7a;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: -webkit-fill-available;        
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+    .nav_items.open{
+        transform: translateX(0) !important
+    }
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;                
+        margin: 15px;
+    }
+    .nav_toggle span{
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;             
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .nav_toggle.open > span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .nav_toggle.open > span:nth-child(2){
+        display: none;
+    }
+    .nav_toggle.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+}
